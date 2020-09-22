@@ -1,0 +1,331 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-gb">
+<title>Bitrix24 Installation Guide</title>
+<style type="text/css">
+	.error_text {font-family: Verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#FF0000; font-weight:bold;}
+	.warning_text {font-family: Verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#990000; font-weight:bold;}
+	.ok_text {font-family: Verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#00FF00; font-weight:bold;}
+
+	.tablehead, .tablehead1, .tablehead2, .tablehead3, .tablehead4, .tablehead5 {background-color:#C2DBED; padding:3px;}
+	.tablehead1, .tablehead2, .tablehead3 {}
+	.tablehead1 {}
+	.tablehead3 {}
+	.tablehead4, .tablehead5 {}
+	.tablehead5 {}
+
+	.tablebody, .tablebody1, .tablebody2, .tablebody3, .tablebody4 {background-color:#E2EFF7; padding:5px;}
+	.tablebody1 {}
+	.tablebody2 {}
+	.tablebody3 {}
+	.tablebody4 {}
+
+	body {margin:0 5% 15px 5%; padding:0 5% 15px 5%;}
+
+	.tablebodytext, .text, .tablefieldtext {font-family:Arial; font-size:12px;}
+	.text, .tablebodytext {color:#000000}
+	.tablefieldtext {color:#365069;}
+
+	INPUT.button {padding:2px; font-family:Tahoma; font-size:12px; cursor: pointer;}
+	INPUT.typeinput {font-size:12px;}
+
+	h3 {font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight: bold; color: #585858; margin-bottom: 5px;}
+	h2 {font-family:Arial, Helvetica, sans-serif; font-size:20px; color: #585858; text-align:center; margin:20px;}
+
+
+	.smalltext{font-family:Verdana, Arial, Helvetica, sans-serif; color:#365069; font-size:10px;}
+	.version{font-family:Verdana, Arial, Helvetica, sans-serif; color:#FF9933; size:18px; font-weight:bold;}
+	.bitrixtitle{font-family:Verdana, Arial, Helvetica, sans-serif; color:#4083B5; size:18px; font-weight:bold;}
+	.install{font-family:Verdana, Arial, Helvetica, sans-serif; size:18px; font-weight:bold;}
+	.head{font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; color:#365069; size:18px;}
+	.headbitrix{font-family:Verdana, Arial, Helvetica, sans-serif; color:#365069; font-size:12px; font-weight:bold;}
+	.title{font-family:Verdana, Arial, Helvetica, sans-serif; color:#365069; font-weight:bold; font-size:16px;}
+	.menu{ background-color:#E6F1F9; font-family:Verdana, Arial, Helvetica, sans-serif; color:#CCD9E4; font-size:12px; padding-left:10px; padding-right:5px;}
+	.menuact{background-color:#D8E8F4; font-family:Verdana, Arial, Helvetica, sans-serif; color:#365069; font-size:12px; padding-left:10px; padding-right:5px; font-weight:bold;}
+	.text11 {font-family:Verdana,Arial, Helvetica, sans-serif; font-weight:normal; color:#365069; font-size:12px; margin-bottom: 5px;}	
+	.text {font-family:Verdana,Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; color:#365069;}
+
+</style>
+</head>
+
+<body link="#6C93AE" alink="#F1555A" vlink="#a4a4a4">
+
+              <h2>Bitrix24 Installation Guide</h2>
+<table width="100%" cellspacing="1" cellpadding="0" border="0" bgcolor="#d5e7f3" class="text">
+	<tbody>
+		<tr>
+			<td>
+				<table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#f4fbff">
+					<tbody>
+						<tr>
+							<td width="100%" valign="top" style="background-repeat: repeat-x; background-position: center top; padding-top: 25px; padding-right: 20px; padding-left: 20px;"><font class="text">
+<ol><li>Extract files from the Bitrix24 distribution package to the root directory of
+    the &quot;<font class="text">Bitrix Environment&quot; folder</font>.
+</li>
+									<li>Prepare your system for the installation. If you install Bitrix24 without Bitrix Web
+                                      Environment, please ensure
+										that it satisfies the following minimum requirements.
+										<ul type="square">
+											<li>Install Apache web server
+												(or IIS) if it is not installed yet. Configure it to
+												support PHP. Bitrix24 requires Apache web server version 1.3 or higher
+												(or Microsoft IIS 5.0 and higher), and PHP version 5.3 and higher.</li>
+											<li>Install the desired database engine
+												(MySQL version 5.0 (and higher)).</li>
+											<li>If you re-install the system, remember to delete all
+												tables from the database.</li>
+											<li>Ensure the disk has extra 10 Mb of free space for the update system to function properly.</li>
+										</ul>
+									</li>
+									<li>Open <nobr><b>http://localhost/index.php</b></nobr> in your browser.
+									</li>
+									<li>Follow the installation wizard instructions.<h2>
+                                        Installation Step 1 (The Start)</h2>
+                                      <p>The installation process starts. The installation wizard displays information
+										about the product and the installation.</p>
+                                      <h2>
+                                        Installation Step 2 (License
+                                        Agreement)</h2>
+                                      <p>The installation wizard displays the license agreement. Read
+										it carefully. You
+										have to accept the license agreement to continue the
+                                      installation.</p>
+
+                                      <h2>
+                                        Installation Step 3 (Database Type
+                                        Selection)</h2>
+			<ul>
+			<li><b>License key:</b>  If you have already purchased a license,
+				enter the license key here. If you install the product for
+				evaluation purposes, leave the default field value (DEMO).
+			<li><b>Choose database</b><b>:</b>  You must select the exact database
+				type for which your license has been issued. Selecting any database
+				type other than the one stipulated by the license violates the
+				license agreement and can cause partial or full malfunction of
+              the portal.		</ul>
+			
+			<p>
+                                        MySQL databases can be
+                                        installed in UTF-8 encoding. If you
+                                        choose to install UTF-8 version, mark
+                                        the <b>Install in UTF-8 Mode</b> option.</p>
+
+			<h2>
+                                        Installation step 4 (Preliminary
+                                        Verification):</h2>
+
+                                      <p>The installation wizard checks your system for minimum requirements and displays advices on how to
+			tune your system for optimum performance.
+
+                                      <p>If your system does not match minimum requirements, the problem description
+										in red will display on the top of the screen.<br />
+										The detailed description of the incompatibility can be found
+										in the page body. You cannot continue installation until you fix the problem.
+
+                                      <p>If your system does not match the recommended settings,
+            you can still proceed with the installation. The installer will show
+                                      the potentially incorrect settings.
+                                      However, it is strongly recommended that
+                                      you bring these settings into line with
+                                      the recommended values. You can verify the
+                                      system preferences in the <b>Site Check</b>
+                                      form in Control Panel.
+
+                                      <h2>Installation step 5 (Database
+                                      Creation):
+
+                                      </h2>
+
+                                      <p>Here the license file and the database connection configuration
+										file are created, and the data is uploaded to the database.
+										<ul>
+											<li>MySQL:
+												<ul>
+													<li><b>Server</b><b>:</b> Server that hosts the database engine. Usually &quot;localhost:<font class="text">31006</font>&quot; for local servers.
+													</li>
+													<li><b>Database user:</b>
+														If checked, a new database user will be
+														created. Otherwise, an existing
+														user will be used.
+													</li>
+													<li><b>User name:</b> The user name (login) of
+                                                      a database user to access the database.
+													</li>
+													<li><b>Password:</b>   The user password to access the database.
+													</li>
+													<li><b>Database:</b> if checked, a new database
+														will be created. Otherwise, the existing
+														database will be used.
+													</li>
+													<li><b>Database name:</b>  The name of the database
+														to which the product will be installed.
+														<p><b>Note!</b> If you choose to create a
+														new database or database user, you will have
+														to provide the database administrator's login
+														and password.</p>
+				 
+				<p><b>Note!</b>  The database administrator's user name
+						and password are used only at the installation and
+						database creation time. This information is not stored in the
+						system.</p>
+				
+													</li>
+													<li><b>Login</b>: the administrator's login to
+														be used for connection
+														to the database. </li>
+													<li><b>Password</b>: the administrator's password
+														to be used for
+														connection to the
+														database. </li>
+													<li><b>Type of database tables:</b> Select
+														here the required type of tables. MySQL
+														supports custom table types as of version 4.0
+														and higher. </li>
+												</ul></li>
+											<li>
+
+												<p style="margin-top: 4; margin-bottom: 4">Additional parameters:
+												<ul>
+													<li><b>Access permission for
+                                                      portal files:</b> Permissions that will be applied to
+														all newly created files. Access permissions should allow the web server to write to files. The default value is 0777.<br />
+													</li>
+													<li><b>Access permission for
+                                                      portal folders:</b> Permissions that will be applied to the newly created folders. Access permissions should allow the web server to write to folders. The default value is 0777.
+													</li>
+												</ul>
+											</li>
+										</ul>
+										<p>You can change the database connection parameters manually by editing
+										the file <nobr><b>/bitrix/php_interface/dbconn.php</b>.</nobr></p>
+                                      <h2>Installation step 6
+                                      </h2>
+                                      <p>Here the system creates the database.
+                                      This step does not require any user
+                                      interaction. The process of the database
+                                      creation is indicated by the progress bar.
+                                      When the database creation is completed,
+                                      the installation wizard will proceed to the next
+                                      installation step.</p>
+                                      <h2>
+                                        Installation step 7
+                                        (Configuration)</h2>
+                                      <p>
+										Here you can configure the portal and create the
+                                        portal administrator account. This account
+										gives a user the exclusive access to the
+                                        portal management
+                                      functions and
+										allows to edit all the portal settings. You can create
+                                        more users with less permissions later.
+										<ul>
+											<li><b>Login:</b>  The portal administrator
+												login to access the portal Control
+                                              Panel. Login should contain at least 3
+                                              symbols which can be Latin letters and digits only.
+											</li>
+											<li><b>Password:</b>  The portal administrator
+												password. Login should contain at least 6
+                                              symbols which can be Roman letters and digits
+                                              only.
+											</li>
+											<li><b>Confirm password:</b> Type in the password again to ensure its correctness.
+ </li>
+											<li><b>E-Mail:</b>  The e-mail address of the
+                                              portal administrator.
+											</li>
+											<li><b>First
+                                              name:</b>  The portal
+                                              administrator's first
+												name.
+											</li>
+											<li><b>Last name:</b>  The portal
+                                              administrator's last name.
+											</li>
+										</ul>
+                                      <p>When the administrator account is
+                                      created, the system will start the Demo
+                                      Portal Creation Wizard.</p></li>
+                                      <li>
+                                      <p>Follow the installation wizard
+                                      instructions.</p>
+                                      <p>Note: The <b>Cancel</b> button in the Demo
+                                      Site Creation Wizard is disabled during
+                                      the installation. This button is active
+                                      when the wizard is launched in Control
+                                      Panel.</p>
+                                      <h2>Wizard Step 1</h2>
+                                      <p>Here you can select the template for
+                                      your portal. Templates vary in design, main
+                                      page layout and settings.</p>
+                                      <h2>Wizard Step 2</h2>
+                                      <p>Choose the required colour scheme for
+                                      your site. Each template has a specific
+                                      set of colour schemes.</p>
+                                      <h2>Wizard Step 3</h2>
+                                      <p>Specify the name and title of your
+                                      portal, and provide the company logo.</p>
+                                      <h2>Wizard Step 4</h2>
+                                      <p>This step configures the installation
+                                      parameters. If you specify to set the Active
+                                      Directory preferences, the two additional
+                                      substeps will follow in which you will
+                                      configure your Active Directory and provide
+                                      the AD-to-portal user group mapping.</p>
+                                      <p>Otherwise, the wizard will proceed to
+                                      the last step.</p>
+                                      <h2>Wizard Step 5</h2>
+                                      <p>This step installs the portal files and
+                                      does not require any user
+                                      interaction. You can watch the
+                                      installation process in the progress bar.
+                                      Then, the installation wizard will proceed to the
+                                      final step.</p>
+                                      <h2>Final Step</h2>
+                                      <p>This screen shows that the Portal Creation Wizard has completed
+                                      successfully.
+									</li>
+									<li>If you need, you can adjust more system settings.
+										<ul>
+											<li>Add the following directive to
+												the <b>.htaccess</b> file in the site root folder:
+												<p><b>php_flag session.use_trans_sid off</b></p>
+												to disable adding session identifier
+												to the site links. Remember that your version of the Apache web server may not support this.</li>
+											<li>Add the following directives to
+												the <b>.htaccess</b> file in the site root folder:
+<pre>ExpiresActive on
+ExpiresByType image/jpeg &quot;access plus 3 day&quot;
+ExpiresByType image/gif &quot;access plus 3 day&quot;</pre>
+												to enable image caching. Your Apache web server may not support this.</li>
+										</ul>
+									</li>
+									
+								</ol>
+								The latest version of documentation is available at <a href="http://www.bitrixsoft.com/help/?r1=intranet&amp;r2=install">http://www.bitrixsoft.com/help/</a><br/>
+								
+</font>
+							</td>
+						</tr>
+						<tr>
+							<td width="100%" valign="top" style="background-repeat: repeat-x; background-position: center top; padding-top: 25px; padding-right: 20px; padding-left: 20px;">&nbsp;
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table width="100%" cellspacing="0" cellpadding="3" border="0" bgcolor="#f4fbff" style="border-top: 1px solid rgb(185, 210, 226);" class="text">
+					<tbody>
+						<tr>
+							<td nowrap="">Copyright &copy; 2001-2016 Bitrix, Inc.</td>
+							<td width="100%">&nbsp;</td>
+							<td nowrap=""><a href="http://www.bitrixsoft.com/?r1=intranet&amp;r2=install">www.bitrixsoft.com</a> | <a href="http://www.bitrixsoft.com/support/?r1=intranet&amp;r2=installsupport">Support</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
